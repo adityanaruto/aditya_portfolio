@@ -45,22 +45,24 @@
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
     </a>
 
-    <a href="#contact" class="flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2 rounded-md text-sm font-semibold tracking-wide transition-all duration-300 transform hover:-translate-y-0.5 shadow-md shadow-emerald-900/10">
+    <a href="#contact" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2 rounded-md text-sm font-semibold tracking-wide transition-all duration-300 transform hover:-translate-y-0.5 shadow-md shadow-emerald-900/10">
         Contact Me
-        <svg class="w-4 h-4 animate-[bounceHorizontal_1s_infinite]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 12h15"></path>
+        <svg class="w-4 h-4 animate-[quickBounce_0.6s_infinite]" fill="currentColor" viewBox="0 0 24 24">
+            <rect x="2" y="6" width="2" height="12" rx="0.5"/>
+            <rect x="5" y="6" width="2" height="12" rx="0.5"/>
+            <path d="M9 8v8c0 .55.45 1 1 1h4v3.5c0 .76.92 1.14 1.46.6l6.5-6.5c.33-.33.33-.86 0-1.2l-6.5-6.5C14.92 3.36 14 3.74 14 4.5V8H10c-.55 0-1 .45-1 1z" />
         </svg>
     </a>
 </div>
 
 <style>
-@keyframes bounceHorizontal {
+@keyframes quickBounce {
     0%, 100% {
         transform: translateX(0);
         animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
     }
     50% {
-        transform: translateX(4px);
+        transform: translateX(5px);
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
 }
