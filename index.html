@@ -488,23 +488,27 @@
                 <h3 class="text-xl font-medium text-emerald-400 tracking-wide mt-8">Send Me An Email</h3>
             </div>
 
-            <form onsubmit="event.preventDefault();" class="space-y-4">
-                <div>
-                    <input type="text" placeholder="Enter your name" class="w-full bg-zinc-900/40 border border-zinc-800/60 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 rounded-lg p-4 text-zinc-300 placeholder-zinc-500 focus:outline-none transition-all">
-                </div>
-                <div>
-                    <input type="email" placeholder="Enter your email" class="w-full bg-zinc-900/40 border border-zinc-800/60 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 rounded-lg p-4 text-zinc-300 placeholder-zinc-500 focus:outline-none transition-all">
-                </div>
-                <div>
-                    <textarea rows="6" placeholder="Enter your message" class="w-full bg-zinc-900/40 border border-zinc-800/60 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 rounded-lg p-4 text-zinc-300 placeholder-zinc-500 focus:outline-none resize-none transition-all"></textarea>
-                </div>
-                
-                <div class="pt-2">
-                    <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-extrabold py-3.5 rounded-lg text-sm tracking-widest transition-all uppercase shadow-[0_4px_20px_rgba(16,185,129,0.15)] hover:shadow-[0_4px_25px_rgba(16,185,129,0.3)]">
-                        Send Email
-                    </button>
-                </div>
-            </form>
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+    <input type="hidden" name="access_key" value="99fa020a-8dde-4030-a7f1-73a461ce28c5">
+    
+    <input type="hidden" name="redirect" value="https://aditya-garg-dev.vercel.app">
+
+    <div>
+        <input type="text" name="name" required placeholder="Enter your name" class="w-full bg-zinc-900/40 border border-zinc-800/60 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 rounded-lg p-4 text-zinc-300 placeholder-zinc-500 focus:outline-none transition-all">
+    </div>
+    <div>
+        <input type="email" name="email" required placeholder="Enter your email" class="w-full bg-zinc-900/40 border border-zinc-800/60 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 rounded-lg p-4 text-zinc-300 placeholder-zinc-500 focus:outline-none transition-all">
+    </div>
+    <div>
+        <textarea name="message" rows="6" required placeholder="Enter your message" class="w-full bg-zinc-900/40 border border-zinc-800/60 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 rounded-lg p-4 text-zinc-300 placeholder-zinc-500 focus:outline-none resize-none transition-all"></textarea>
+    </div>
+    
+    <div class="pt-2">
+        <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-extrabold py-3.5 rounded-lg text-sm tracking-widest transition-all uppercase shadow-[0_4px_20px_rgba(16,185,129,0.15)] hover:shadow-[0_4px_25px_rgba(16,185,129,0.3)]">
+            Send Email
+        </button>
+    </div>
+</form>
 
         </div>
     </section>
