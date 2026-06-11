@@ -517,13 +517,17 @@
         function highlightEmail() {
     const emailPill = document.getElementById('email-pill');
     
-    // Add the highlight styling (glowing border, slight background change, and tiny scale bump)
-    emailPill.classList.add('ring-2', 'ring-emerald-400', 'bg-emerald-900/30', 'scale-105');
-    
-    // Remove the styling after 2.5 seconds to create a "flash" effect
+    // Wait 800ms for the smooth scroll to finish landing
     setTimeout(() => {
-        emailPill.classList.remove('ring-2', 'ring-emerald-400', 'bg-emerald-900/30', 'scale-105');
-    }, 2500);
+        // Add the highlight styling
+        emailPill.classList.add('ring-2', 'ring-emerald-400', 'bg-emerald-900/30', 'scale-105');
+        
+        // Remove the styling after 1.2 seconds (shorter, punchier duration)
+        setTimeout(() => {
+            emailPill.classList.remove('ring-2', 'ring-emerald-400', 'bg-emerald-900/30', 'scale-105');
+        }, 1200); 
+        
+    }, 800); // 800ms delay before starting
 }
         function switchTab(projId, tabName) {
             const contents = document.querySelectorAll(`#${projId} .fade-in`);
